@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className='border-slate-400'>
     <div className="flex justify-center">
-      <div className="w-6/12 h-16 justify-center sticky top-0 bg-black  p-4">
+      <div className="w-6/12 h-16 justify-center backdrop-blur-lg sticky top-0 bg-black  p-4">
         <div className="flex border-b justify-center border-gray-800">
           <NavLink
             to="/for-you"
@@ -32,11 +32,11 @@ const Home = () => {
     </div>
     <div>
     <div className="h-full w-96 right-0 top-0 bg-black text-white fixed">
-    <div className='justify-center'>
+    <div>
           <input
             type="text"
             placeholder="Search..."
-            className="mr-4 flex w-80  rounded-full border justify-center   px-3 py-2 border-zinc-700 bg-zinc-900"
+            className="mr-4 flex w-80  rounded-full border justify-center px-3 py-2 border-zinc-700 bg-zinc-900"
           />
         </div>
       </div>
