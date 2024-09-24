@@ -3,12 +3,12 @@ import React from 'react';
 import './output.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
