@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "username": "@johndoe",
+        "tweet": "Hello World!",
+        "date": "September, 2021",
+        "followers": 100,
+        "following": 200
+    }
+]
