@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import './profile.css';
+import './style.css';
 
 function Profile() {
   const [data, setData] = useState(null);
