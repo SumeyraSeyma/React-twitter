@@ -36,9 +36,10 @@
       position: fixed;
       bottom: 0;
       left: 0;
-      overflow-x: auto;
+      overflow-x: hidden;
       flex-direction: row;
       padding: 10px 0;
+
     }
   
     #sidebar ul {
