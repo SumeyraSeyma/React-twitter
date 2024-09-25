@@ -1,11 +1,33 @@
-[
+
     {
         "id": 1,
         "name": "John Doe",
-        "username": "@johndoe",
-        "tweet": "Hello World!",
+        "username": "johndoe",
         "date": "September, 2021",
         "followers": 100,
-        "following": 200
+        "following": 200,
+        "image": "https://randomuser.me/api/port",
+        "posts": [
+            {
+                "id": 1,
+                "tweet": "Hello World!",
+                "date": "September, 2021",
+                "likes": 100,
+                "comments": 200
+            },
+            {
+                "id": 2,
+                "tweet": "Hello World!",
+                "date": "September, 2021",
+                "likes": 100,
+                "comments": 200
+            },
+            {
+                "id": 3,
+                "tweet": "Hello World!",
+                "date": "September, 2021",
+                "likes": 100,
+                "comments": 200
+            }
+        ]
     }
-]

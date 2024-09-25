@@ -4,7 +4,7 @@ import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './profile.css';
 
-function Profile() {
+function OtherProfile() {
   const [data, setData] = useState(null);
 
   let navigate = useNavigate();
@@ -61,21 +61,13 @@ function Profile() {
         
       </div>
         <div className='flex justify-end'>
-            <button className="font-bold rounded-full bg-black border border-white text-white mt-4 h-10 w-28 mr-2">Edit Profile</button>
+            <button className="font-bold rounded-full bg-white text-black mt-4 h-10 w-20 mr-2">Follow</button>
         </div>
     </div>
-
-        <div>
-            <div className="flex mt-20 ml-6 justify-between">
-                <div>{data ?
-                    <p className='text-white font-bold' style={{fontSize:'20px'}}>{data.username}</p> 
-                    : <p>Loading...</p>}</div>
-            </div>
-        </div>
 
       </div>
     </div>
   );
 }
 
-export default Profile;
+export default OtherProfile;
