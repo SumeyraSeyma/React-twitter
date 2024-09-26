@@ -79,6 +79,16 @@
     #sidebar ul li button {
       width: 100%;
     }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    
   }
   
 

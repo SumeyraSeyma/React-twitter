@@ -37,15 +37,28 @@ const Home = () => {
     <div className='border-slate-400'>
       <div className="flex justify-center">
         <div className="w-full md:w-6/12 h-16 justify-center backdrop-blur-lg sticky top-0 bg-black p-4">
-          <div className='justify-center flex'>
-            <NavLink
-              to="/"
-            >
-              <svg className='w-6 h-6 2xl:hidden fill-current text-white'>
-                <path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/>
-              </svg>
-            </NavLink>
-          </div>
+        <div className="flex justify-between items-center w-full px-4 py-2 bg-black">
+      <NavLink to="/profile" className="flex items-center space-x-2">
+        {data && (
+          <img
+            src={data.profile}
+            alt="Profile"
+            className="w-4 h-4 rounded-full border-3 border-black"
+          />
+        )}
+      </NavLink>
+      <div className="flex-grow flex justify-center">
+        <NavLink to="/" className="flex items-center justify-center">
+          <svg
+            className="w-6 h-6 fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </NavLink>
+      </div>
+    </div>
           <div className="flex justify-center mt-0 border border-gray-800">
             <NavLink
               to="/for-you"
@@ -94,7 +107,7 @@ const Home = () => {
 )}
     </div>
     <div className='flex'>
-    <div className="flex mt-4 space-x-2 justify-start">
+    <div className="flex mt-4 2xl:space-x-2 justify-start">
         <button className="p-2 text-xl">
           <svg className='text-blue-500'
              width="24"

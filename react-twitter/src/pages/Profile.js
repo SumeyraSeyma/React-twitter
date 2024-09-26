@@ -41,7 +41,7 @@ function Profile() {
 
   return (
     <div className="flex justify-center">
-      <div className="w-6/12 h-24 justify-center backdrop-blur-lg sticky top-0 bg-black p-4">
+      <div className="2xl:w-6/12 2xl:h-24 justify-center backdrop-blur-lg sticky z-50 top-0 bg-black p-4" id='pa'>
         <div className="flex ">
             <button onClick={handleGoBack} className='flex mr-7 items-center justify-start rounded-full border   px-3 py-2  border-black bg-black transition duration-300 ease-in-out'>
                 <FontAwesomeIcon icon={faArrowLeftLong} className='text-white' />
@@ -51,11 +51,11 @@ function Profile() {
                     <p className='text-white font-bold' style={{fontSize:'20px'}}>{data.username}</p> 
                     : <p>Loading...</p>}
                 {data ?
-                    <p style={{color:'rgb(113, 118, 123)', fontSize:'12px'}} >
+                    <div style={{color:'rgb(113, 118, 123)', fontSize:'12px'}} >
                         {data.posts.length > 0 && (
                         <p>{data.posts[data.posts.length - 1].id} posts</p>
                         )}
-                    </p>
+                    </div>
                     : <p>Loading...</p>}
             </div>
         </div>
@@ -126,18 +126,18 @@ function Profile() {
                 }</div>
                 
             </div>
-            <div className="bg-black p-4  mt-3 ">
-        <ul className="flex h-14 ">
-          <li className={`${activeTab === 'posts' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+            <div className="bg-black p-4  mt-3 " >
+        <ul className="flex 2xl:h-14 " id='pb'>
+          <li className={`${activeTab === 'posts' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} 2xl:px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
             <NavLink to="/profile" className={` px-4 py-2 text-white `}>Posts</NavLink>
           </li>
-          <li className={`${activeTab === 'replies' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+          <li className={`${activeTab === 'replies' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} 2xl:px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
             <NavLink to="/replies" className={` px-4 py-2 text-white `}>Replies</NavLink>
           </li>
-          <li className={`${activeTab === 'highlights' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+          <li className={`${activeTab === 'highlights' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} 2xl:px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
             <NavLink to="/highlights" className={` px-4 py-2 text-white `}>Highlights</NavLink>
           </li>
-          <li className={`${activeTab === 'media' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+          <li className={`${activeTab === 'media' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} 2xl:px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
             <NavLink to="/media" className={` px-4 py-2 text-white `}>Media</NavLink>
           </li>
         </ul>
@@ -145,7 +145,7 @@ function Profile() {
             <div className="rounded overflow-hidden shadow-lg p-4 m-4">
               <div>
                 {data && data.posts.map((post) => (
-                  <div key={data.id}>
+                  <div key={post.id}>
                   <div className="flex mt-4 ">
                     <div>
                     <img src={data.profile} alt="profile" className='w-8 h-8 rounded-full border-3 border-black' />
@@ -235,18 +235,10 @@ function Profile() {
               </div>
                 ))}
                 </div>
-              
-              
-      
-      
-      
+  
     </div>
-    
-                
 
         </div>
-
-        
 
       </div>
       <div className="flex">
