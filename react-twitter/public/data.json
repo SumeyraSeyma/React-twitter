@@ -2,11 +2,12 @@
     {
         "id": 1,
         "name": "John Doe",
-        "username": "johndoe",
+        "username": "@johndoe",
         "date": "September, 2021",
         "followers": 100,
         "following": 200,
-        "image": "https://www.whitescreen.online/image/white-background.png",
+        "cover": "https://www.whitescreen.online/image/white-background.png",
+        "profile": "https://www.whitescreen.online/image/white-background.png",
         "posts": [
             {
                 "id": 1,

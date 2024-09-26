@@ -8,7 +8,6 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('forYou');
   const [input, setInput] = useState('');
   const [isFocused, setIsFocused] = useState(false);
-  const [trends, setTrends] = useState([]);
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -69,7 +68,7 @@ const Home = () => {
             <div className="flex items-start w-full">
               <div className='flex-shrink-0'>
                 {data ?
-                <img src={data.image} className='w-8 h-8 rounded-full border-3 border-black' />
+                <img src={data.profile} className='w-8 h-8 rounded-full border-3 border-black' />
                 : <p>Loading...</p>}
               </div>
                 <textarea
