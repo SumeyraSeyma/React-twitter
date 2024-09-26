@@ -14,23 +14,26 @@
             {
                 "id": 1,
                 "tweet": "Hello World!",
-                "date": "September, 2021",
+                "date": "Feb, 2021",
                 "likes": 100,
-                "comments": 200
+                "replies": 200,
+                "comments": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "image":"https://www.whitescreen.online/image/white-background.png"
             },
             {
                 "id": 2,
                 "tweet": "Hello World!",
-                "date": "September, 2021",
+                "date": "Jan, 2021",
                 "likes": 100,
-                "comments": 200
-            },
-            {
-                "id": 3,
-                "tweet": "Hello World!",
-                "date": "September, 2021",
-                "likes": 100,
-                "comments": 200
+                "replies": 200,
+                "comments": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "image":"https://imgix.cosmicjs.com/bab6b030-ff1e-11ed-8fca-9b0db64c9b86-nasa-vhSz50AaFAs-unsplash.jpg?w=1400&auto=compression,format"
             }
         ],
         "trends":[
