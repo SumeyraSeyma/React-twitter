@@ -37,22 +37,22 @@
             {
                 "location": "Trending in Istanbul",
                 "tag": "#deprem",
-                "posts": "10.4K posts"
+                "posts": "10.4K"
               },
               {
                 "location": "Trending in Turkey",
                 "tag": "#intihar",
-                "posts": "7,049 posts"
+                "posts": "7,049"
               },
               {
                 "location":"Trending in Turkey",
                 "tag":"Dolar",
-                "posts":"6,049 posts"
+                "posts":"6,049"
               },
               {
                 "location":"Trending in Turkey",
                 "tag":"#polis",
-                "posts":"5,049 posts"
+                "posts":"5,049"
               }
         ]
     }

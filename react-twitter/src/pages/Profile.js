@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
+import { NavLink } from 'react-router-dom';
 
 function Profile() {
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
+  const [activeTab, setActiveTab] = useState('posts');
 
   let navigate = useNavigate();
     
@@ -44,7 +46,7 @@ function Profile() {
             <button onClick={handleGoBack} className='flex mr-7 items-center justify-start rounded-full border   px-3 py-2  border-black bg-black transition duration-300 ease-in-out'>
                 <FontAwesomeIcon icon={faArrowLeftLong} className='text-white' />
             </button>
-            <div>
+            <div className='mb-3'>
                 {data ?
                     <p className='text-white font-bold' style={{fontSize:'20px'}}>{data.username}</p> 
                     : <p>Loading...</p>}
@@ -109,20 +111,39 @@ function Profile() {
                         <p className='text-gray-500'>Joined {data.date}</p>
                       </div>
                     </div>
-                    <div className='flex'>
-                          <p className='text-white font-bold flex'>{data.following} <p className='text-gray-500'> Following</p></p>
-                      </div>
-                  
-                    <div>
-
+                    <div className='flex mt-3'>
+                        <div className="flex items-center space-x-2 mr-2">
+                          <p className="text-white font-bold">{data.following}</p>
+                          <p className="text-gray-500">Following</p>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <p className="text-white font-bold">{data.followers}</p>
+                          <p className="text-gray-500">Followers</p>
+                        </div>
                     </div>
                   </div> 
-                }
-              
-              </div>
                     
-
+                }</div>
+                
             </div>
+            <div className="bg-black p-4  mt-3 ">
+        <ul className="flex h-14 ">
+          <li className={`${activeTab === 'posts' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+            <NavLink to="/profile" className={` px-4 py-2 text-white `}>Posts</NavLink>
+          </li>
+          <li className={`${activeTab === 'replies' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+            <NavLink to="/replies" className={` px-4 py-2 text-white `}>Replies</NavLink>
+          </li>
+          <li className={`${activeTab === 'highlights' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+            <NavLink to="/highlights" className={` px-4 py-2 text-white `}>Highlights</NavLink>
+          </li>
+          <li className={`${activeTab === 'media' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
+            <NavLink to="/media" className={` px-4 py-2 text-white `}>Media</NavLink>
+          </li>
+        </ul>
+            </div>
+            
+
         </div>
 
         
