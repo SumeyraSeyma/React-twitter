@@ -29,5 +29,27 @@
                 "likes": 100,
                 "comments": 200
             }
+        ],
+        "trends":[
+            {
+                "location": "Trending in Istanbul",
+                "tag": "#deprem",
+                "posts": "10.4K posts"
+              },
+              {
+                "location": "Trending in Turkey",
+                "tag": "#intihar",
+                "posts": "7,049 posts"
+              },
+              {
+                "location":"Trending in Turkey",
+                "tag":"Dolar",
+                "posts":"6,049 posts"
+              },
+              {
+                "location":"Trending in Turkey",
+                "tag":"#polis",
+                "posts":"5,049 posts"
+              }
         ]
     }

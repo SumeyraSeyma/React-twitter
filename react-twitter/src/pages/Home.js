@@ -8,6 +8,7 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('forYou');
   const [input, setInput] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [trends, setTrends] = useState([]);
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -156,13 +157,36 @@ const Home = () => {
         </div>
       </div>
       
-      <div className="flex justify-end">
+      <div className="flex">
         <div className="h-full w-full sm:w-48 md:w-96 hidden 2xl:block bg-black text-white fixed top-0 right-0">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="m-4 w-full md:w-80 rounded-full border px-3 py-2 border-zinc-700 bg-zinc-900"
-          />
+          <div className="fixed top-0 right-0 w-96 h-full bg-black text-white p-4">
+            <input
+                type="text"
+                placeholder="Search..."
+                className="w-full rounded-full px-3 py-2 border border-lg border-zinc-700 bg-zinc-900 mb-4"/>
+            <div className="bg-black text-white max-w-sm mx-auto p-6 rounded-lg shadow-lg border border-gray-700 mb-4">
+              <h2 className="text-lg font-semibold mb-2">Subscribe to Premium</h2>
+                <p className="mb-4">
+                Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                </p>
+              <button className="bg-blue-500 rounded-full hover:bg-blue-700 text-white font-bold py-2 px-4">
+                Subscribe
+              </button>
+            </div>
+            <div className="border border-zinc-700  rounded p-4">
+                <h2 className="text-lg font-bold mb-4">Trends for you</h2>
+                <ul>
+                  { data &&
+                    data.trends.map((trend, index) => (
+                        <li key={index} className="py-2  last:border-b-0">
+                            <div className="text-xs text-gray-500">{trend.location}</div>
+                            <div className="font-bold">{trend.tag}</div>
+                            <div className="text-xs text-gray-500">{trend.posts} posts</div>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
         </div>
       </div>
     </div>
