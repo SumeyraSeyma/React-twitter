@@ -3,11 +3,15 @@ import { NavLink } from 'react-router-dom';
 import './style.css';
 import { useEffect } from 'react';
 
+
 const Home = () => {
   const [data, setData] = useState(null);
   const [activeTab, setActiveTab] = useState('forYou');
   const [input, setInput] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [filteredData, setFilteredData] = useState(null);
+  const [search, setSearch] = useState('');
+
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -30,7 +34,25 @@ const Home = () => {
       }
     }
     fetchData();
-  }, []); 
+  }, []);
+  
+  useEffect(() => {
+    if (!data || !data.otherPosts) {
+      setFilteredData([]);
+      return;
+    }
+
+    if (search === '') {
+      setFilteredData(null);
+    } else {
+      const filtered = data.otherPosts.filter((post) =>
+        post.body.toLowerCase().includes(search.toLowerCase()) ||
+        post.username.toLowerCase().includes(search.toLowerCase()) ||
+        post.name.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredData(filtered);
+    }
+  }, [search, data]);
 
   return (
     <div>
@@ -167,16 +189,16 @@ const Home = () => {
 </div>
 <div className="rounded overflow-hidden shadow-lg p-4 m-4">
               <div>
-                {data && data.otherPosts.map((post) => (
+                {(filteredData || data?.otherPosts)?.map((post) => (
                   <div key={post.id}>
                   <div className="flex mt-4 ">
                     <div>
-                    <img src={data.image} alt="profile" className='w-8 h-8 rounded-full border-3 border-black' />
+                    <img src={post.image} alt="profile" className='w-8 h-8 rounded-full border-3 border-black' />
                       </div>
                       <div>
                     <div className='flex'>
-              <p className='text-white font-bold ml-2'>{data.name}</p>
-              <p className='text-gray-500 ml-2'>{data.username}</p>
+              <p className='text-white font-bold ml-2'>{post.name}</p>
+              <p className='text-gray-500 ml-2'>{post.username}</p>
               <p className='text-gray-500 ml-2'>· {post.date}</p>
               </div>
               <div>
@@ -273,6 +295,8 @@ const Home = () => {
             <input
                 type="text"
                 placeholder="Search..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 className="w-full rounded-full px-3 py-2 border border-lg border-zinc-700 bg-zinc-900 mb-4"/>
             <div className="bg-black text-white max-w-sm mx-auto p-6 rounded-lg shadow-lg border border-gray-700 mb-4">
               <h2 className="text-lg font-semibold mb-2">Subscribe to Premium</h2>

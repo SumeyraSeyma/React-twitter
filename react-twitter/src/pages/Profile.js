@@ -37,7 +37,8 @@ function Profile() {
       }
     }
     fetchData();
-  }, []); 
+  }, []);
+   
 
   return (
     <div className="flex justify-center">
@@ -170,7 +171,7 @@ function Profile() {
               
               </div>
 
-              <div className="px-6 pt-4 pb-2 flex justify-between items-center">
+              <div className="px-6 pt-4 pb-2 flex justify-between items-center" >
                 <button className="flex items-center">
                   <svg className='text-gray-500 mr-1'
                         width="20" 

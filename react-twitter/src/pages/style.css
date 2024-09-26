@@ -43,6 +43,9 @@
       overflow-x: hidden;
       flex-direction: row;
       padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
 
     }
   
@@ -88,7 +91,9 @@
       transform: translate3d(0px, 0px, 0px) translateY(0px);
     }
 
-    
+    #pc{
+      margin-right: 0.5rem;
+    }
   }
   
 

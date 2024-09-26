@@ -60,6 +60,8 @@
             {
                 "image":"https://imgix.cosmicjs.com/bab6b030-ff1e-11ed-8fca-9b0db64c9b86-nasa-vhSz50AaFAs-unsplash.jpg?w=1400&auto=compression,format",
                 "id": 1,
+                "name": "John Doe",
+                "username": "@johndoe",
                 "likes": 100,
                 "replies": 200,
                 "retweets": 300,
@@ -70,6 +72,8 @@
                 {
                 "image":"https://imgix.cosmicjs.com/baff2ae0-ff1e-11ed-8fca-9b0db64c9b86-greg-rakozy-oMpAz-DN-9I-unsplash.jpg?w=1400&auto=compression,format",
                 "id": 2,
+                "name": "John Doe",
+                "username": "@johndoe",
                 "likes": 100,
                 "replies": 200,
                 "retweets": 300,
@@ -80,6 +84,8 @@
                 {
                 "image":"https://imgix.cosmicjs.com/6c3e2770-fe43-11ed-a3a3-c3fa0772764a-927414.jpg?w=1400&auto=compression,format",
                 "id": 3,
+                "name": "Jane Doe",
+                "username": "@janedoe",
                 "likes": 100,
                 "replies": 200,
                 "retweets": 300,
@@ -90,6 +96,8 @@
                 {
                 "image":"https://imgix.cosmicjs.com/99fd6650-23f5-11e7-875c-3f5dc9c15c2b-beach.jpg?w=1400&auto=compression,format",
                 "id": 4,
+                "name": "Jane Doe",
+                "username": "@janedoe",
                 "likes": 100,
                 "replies": 200,
                 "retweets": 300,
@@ -100,6 +108,8 @@
                 {
                 "image":"https://imgix.cosmicjs.com/ab9596a0-f674-11ed-87b8-b7104fcd2121-marcelo-villalobos-qH635BagHg-unsplash.jpg?w=1400&auto=compression,format",
                 "id": 5,
+                "name": "Life Spencer",
+                "username": "@lifespencer",
                 "likes": 100,
                 "replies": 200,
                 "retweets": 300,
@@ -110,6 +120,8 @@
                 {
                     "image":"https://cook.blob.core.windows.net/assets/900x600coleslowrecipe.jpg",
                     "id": 6,
+                    "name": "Life Spencer",
+                    "username": "@lifespencer",
                     "likes": 100,
                     "replies": 200,
                     "retweets": 300,
@@ -121,6 +133,8 @@
                 {
                     "image":"https://cook.blob.core.windows.net/assets/moroccanblog1.jpg",
                     "id": 7,
+                    "name": "Life Spencer",
+                    "username": "@lifespencer",
                     "likes": 100,
                     "replies": 200,
                     "retweets": 300,
@@ -131,6 +145,8 @@
                 {
                     "image":"https://abduzeedo.com/sites/default/files/styles/max_2600x2600/public/originals/hero_tradition.png.webp?itok=m7-IeK8K",
                     "id": 8,
+                    "name": "Life Spencer",
+                    "username": "@lifespencer",
                     "likes": 100,
                     "replies": 200,
                     "retweets": 300,
@@ -142,6 +158,8 @@
                 {
                     "image":"https://abduzeedo.com/sites/default/files/styles/max_2600x2600/public/originals/hero_cargo.png.webp?itok=xmaiYcKG",
                     "id": 9,
+                    "name": "Life Spencer",
+                    "username": "@lifespencer",
                     "likes": 100,
                     "replies": 200,
                     "retweets": 300,
