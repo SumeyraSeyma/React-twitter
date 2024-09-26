@@ -3,6 +3,8 @@
         "id": 1,
         "name": "John Doe",
         "username": "@johndoe",
+        "bio": "Sharing things I'm learning through my foundation work and other interests.",
+        "location": "Seattle, WA",
         "date": "September, 2021",
         "followers": 100,
         "following": 200,
