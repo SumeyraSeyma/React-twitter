@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div>
     
-    <div className="h-full sm:flex-row w-96 bg-black text-white fixed border-gray-800" id='sidebar'>
+    <div className="h-full sm:flex-row w-96 bg-black text-white fixed " id='sidebar'>
       <ul className="space-y-2 mr-5">
         <li className="flex items-center justify-center p-2">
             <NavLink

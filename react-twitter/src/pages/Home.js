@@ -46,7 +46,7 @@ const Home = () => {
               </svg>
             </NavLink>
           </div>
-          <div className="flex border-b justify-center border-gray-800">
+          <div className="flex justify-center mt-0 border border-gray-800">
             <NavLink
               to="/for-you"
               className={`${activeTab === 'forYou' ? 'border-b-2 border-blue-500' : ''} px-4 py-2 text-white`}
@@ -64,37 +64,37 @@ const Home = () => {
               Following
             </NavLink>
           </div>
-          <div class="flex flex-col items-center w-full p-4 border border-gray-800">
-    <div class="flex items-start w-full">
-        <div class='flex-shrink-0'>
-            {data ?
+          <div className="flex flex-col  w-full p-4 border border-gray-800">
+            <div className="flex items-start w-full">
+              <div className='flex-shrink-0'>
+                {data ?
                 <img src={data.image} className='w-8 h-8 rounded-full border-3 border-black' />
                 : <p>Loading...</p>}
-        </div>
-        <textarea
-            value={input}
-            onChange={handleInputChange}
-            placeholder="What is happening?!"
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
-            className="flex-grow h-20 p-2 bg-black rounded-lg ml-4 resize-none"
-        />
-    </div>
+              </div>
+                <textarea
+                value={input}
+                onChange={handleInputChange}
+                placeholder="What is happening?!"
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
+                className="flex-grow h-20 p-2 text-white bg-black rounded-lg ml-4 focus:outline-none resize-none"/>
+            </div>
     <div>
     {isFocused && (
-      <div className='flex'>
-        <svg className=' text-blue-500 mr-2'
-            width="20"
-            height="20" 
-            viewBox="0 0 24 24" 
-            fill="currentColor">
-          <path d='M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z'/>
-        </svg>
-        <button className="text-blue-500 mb-2">Everyone can reply</button>
-      </div>
-      )}
+  <div className='flex items-center'>  
+    <svg className='text-blue-500 mr-2' 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24" 
+          fill="currentColor">
+      <path d='M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z'/>
+    </svg>
+    <button className="text-blue-500">Everyone can reply</button>
+  </div>
+)}
     </div>
-    <div className="flex mt-4">
+    <div className='flex'>
+    <div className="flex mt-4 space-x-2 justify-start">
         <button className="p-2 text-xl">
           <svg className='text-blue-500'
              width="24"
@@ -150,6 +150,7 @@ const Home = () => {
           </svg>
         </button>
         <button className="bg-blue-500 text-white rounded-full px-6 py-2" onClick={handlePost}>Post</button>
+      </div>
     </div>
 </div>
         </div>
