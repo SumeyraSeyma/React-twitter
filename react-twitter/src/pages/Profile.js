@@ -157,7 +157,7 @@ function Profile() {
               <p className='text-gray-500 ml-2'>· {post.date}</p>
               </div>
               <div>
-                <p className='text-white mt-2 mb-2'>{post.body}</p>
+                <p className='text-white mt-2 mb-4'>{post.body}</p>
 
               </div>
               

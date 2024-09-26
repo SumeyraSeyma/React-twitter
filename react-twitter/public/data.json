@@ -12,24 +12,22 @@
         "profile": "https://www.whitescreen.online/image/white-background.png",
         "posts": [
             {
-                "id": 1,
+                "id": 2,
                 "tweet": "Hello World!",
                 "date": "Feb, 2021",
                 "likes": 100,
                 "replies": 200,
-                "comments": 200,
                 "retweets": 300,
                 "reposts": 300,
                 "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                 "image":"https://www.whitescreen.online/image/white-background.png"
             },
             {
-                "id": 2,
+                "id": 3,
                 "tweet": "Hello World!",
                 "date": "Jan, 2021",
                 "likes": 100,
                 "replies": 200,
-                "comments": 200,
                 "retweets": 300,
                 "reposts": 300,
                 "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -57,5 +55,99 @@
                 "tag":"#polis",
                 "posts":"5,049"
               }
+        ],
+        "otherPosts":[
+            {
+                "image":"https://imgix.cosmicjs.com/bab6b030-ff1e-11ed-8fca-9b0db64c9b86-nasa-vhSz50AaFAs-unsplash.jpg?w=1400&auto=compression,format",
+                "id": 1,
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "date":"May 30, 2023",
+                "body": "As someone who loves nature, there's nothing quite like the thrill of exploring the world's most beautiful landscapes. From snow-capped mountains to crystal-clear waters, there's no shortage of natural wonders to discover. So pack your bags, grab your hiking boots, and let's take a journey around the globe to explore some of the most breathtaking natural sights on earth."
+                },
+                {
+                "image":"https://imgix.cosmicjs.com/baff2ae0-ff1e-11ed-8fca-9b0db64c9b86-greg-rakozy-oMpAz-DN-9I-unsplash.jpg?w=1400&auto=compression,format",
+                "id": 2,
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "date":"Apr 27, 2023",
+                "body": "Planet Earth is a magnificent place, full of wonders and mysteries waiting to be discovered. From the depths of the oceans to the highest peaks of the mountains, there is always something new and exciting to explore. In this blog post, we'll take a closer look at some of the most fascinating aspects of our planet."
+                },
+                {
+                "image":"https://imgix.cosmicjs.com/6c3e2770-fe43-11ed-a3a3-c3fa0772764a-927414.jpg?w=1400&auto=compression,format",
+                "id": 3,
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "date":"Mar 15, 2023",
+                "body": "Biodiversity refers to the variety of life on Earth, including all of the different species of plants, animals, and microorganisms. It is one of the most important aspects of our planet, and it plays a crucial role in maintaining the health and balance of ecosystems. In this blog post, we'll take a closer look at the importance of biodiversity on planet Earth."
+                },
+                {
+                "image":"https://imgix.cosmicjs.com/99fd6650-23f5-11e7-875c-3f5dc9c15c2b-beach.jpg?w=1400&auto=compression,format",
+                "id": 4,
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "date":"Feb 3, 2023",
+                "body": "Earth is a remarkable planet, full of natural wonders and opportunities for adventure. From the highest mountains to the deepest oceans, there is no shortage of places to explore and activities to engage in."
+                },
+                {
+                "image":"https://imgix.cosmicjs.com/ab9596a0-f674-11ed-87b8-b7104fcd2121-marcelo-villalobos-qH635BagHg-unsplash.jpg?w=1400&auto=compression,format",
+                "id": 5,
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "date":"Dec 5, 2022",
+                "body": "Welcome to my travel blog, where I share my adventures exploring the beautiful planet we call home. Today, I want to talk about the incredible experience of exploring the Earth from a blogger's point of view."
+                },
+                {
+                    "image":"https://cook.blob.core.windows.net/assets/900x600coleslowrecipe.jpg",
+                    "id": 6,
+                    "likes": 100,
+                    "replies": 200,
+                    "retweets": 300,
+                    "reposts": 300,
+                    "date":"Jun 19, 2024",
+                    "body":"We’re saying it very quietly, so we don’t jinx it … but it feels like it’s getting a bit warmer. Cue barbeque! And what better way to celebrate the start of summer than with a delicious Halloumi Coleslaw recipe?"
+            
+                },
+                {
+                    "image":"https://cook.blob.core.windows.net/assets/moroccanblog1.jpg",
+                    "id": 7,
+                    "likes": 100,
+                    "replies": 200,
+                    "retweets": 300,
+                    "reposts": 300,
+                    "date":"Aug 21, 2024",
+                    "body":"If you've got a little bit of time on your hands at the weekend, try making your own Moroccan flatbreads. They're a great accompaniment to tagines and dips, and they're much easier to make than you might think. This recipe makes 8 flatbreads, so you can freeze any leftovers for another day."
+                },
+                {
+                    "image":"https://abduzeedo.com/sites/default/files/styles/max_2600x2600/public/originals/hero_tradition.png.webp?itok=m7-IeK8K",
+                    "id": 8,
+                    "likes": 100,
+                    "replies": 200,
+                    "retweets": 300,
+                    "reposts": 300,
+                    "date":"Jul 1, 2024",
+                    "body":"&Tradition's design seamlessly blends classic craftsmanship with modern aesthetics. Explore the branding and UI UX design concept that captures the essence of this Danish design company."
+            
+                },
+                {
+                    "image":"https://abduzeedo.com/sites/default/files/styles/max_2600x2600/public/originals/hero_cargo.png.webp?itok=xmaiYcKG",
+                    "id": 9,
+                    "likes": 100,
+                    "replies": 200,
+                    "retweets": 300,
+                    "reposts": 300,
+                    "date":"Jun 15, 2024",
+                    "body":"Hôtel Cargo, a boutique hotel in Dunkirk, France, offers a unique nautical experience that transports guests to the golden age of transatlantic travel. Midi:Quinze's branding concept for Hôtel Cargo captures the essence of this maritime journey, blending vintage charm with modern elegance."
+                }
         ]
     }
