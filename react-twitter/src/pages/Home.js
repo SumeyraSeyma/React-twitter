@@ -207,7 +207,7 @@ const Home = () => {
     </div>
 </div>
 
-<div className="rounded overflow-hidden shadow-lg p-4 m-4">
+<div className="rounded overflow-hidden shadow-lg p-4 m-4" id='hc'>
               <div>
                 {(filteredData || data?.otherPosts)?.map((post) => (
                   <div key={post.id}>
