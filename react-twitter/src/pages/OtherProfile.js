@@ -79,7 +79,7 @@ function OtherProfile() {
       
     </div>
       <div className='flex justify-end'>
-          <button className="font-bold rounded-full bg-black border border-white text-white mt-4 h-10 w-28 mr-2">Edit Profile</button>
+          <button className="font-bold rounded-full bg-white border border-white text-black mt-4 h-10 w-28 mr-2">Follow</button>
       </div>
   </div>
 
