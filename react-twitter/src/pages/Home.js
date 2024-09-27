@@ -56,6 +56,23 @@ const Home = () => {
 
   return (
     <div>
+      <div>
+        <NavLink
+          to="/post"
+          className="fixed 2xl:hidden bottom-24 right-4 bg-blue-500 text-white p-4 rounded-full shadow-lg text-lg z-50 flex items-center justify-center"
+        >
+          <svg 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24"
+          >
+          <path 
+          fill="white" 
+          d='M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z'
+          />
+          </svg>
+        </NavLink>
+      </div>
     <div className='border-slate-400'>
       <div className="flex justify-center">
         <div className="w-full md:w-6/12 h-16 justify-center backdrop-blur-lg sticky top-0 bg-black p-4">
@@ -98,6 +115,7 @@ const Home = () => {
               Following
             </NavLink>
           </div>
+          <div className='hidden 2xl:block'>
           <div className="flex flex-col  w-full p-4 border border-gray-800">
             <div className="flex items-start w-full">
               <div className='flex-shrink-0'>
@@ -113,7 +131,7 @@ const Home = () => {
                 onBlur={() => setIsFocused(false)}
                 className="flex-grow h-20 p-2 text-white bg-black rounded-lg ml-4 focus:outline-none resize-none"/>
             </div>
-    <div>
+          <div>
     {isFocused && (
   <div className='flex items-center'>  
     <svg className='text-blue-500 mr-2' 
@@ -127,7 +145,7 @@ const Home = () => {
   </div>
 )}
     </div>
-    <div className='flex'>
+    <div className='flex' >
     <div className="flex mt-4 2xl:space-x-2 justify-start">
         <button className="p-2 text-xl">
           <svg className='text-blue-500'
@@ -184,6 +202,7 @@ const Home = () => {
           </svg>
         </button>
         <button className="bg-blue-500 text-white rounded-full px-6 py-2" onClick={handlePost}>Post</button>
+      </div>
       </div>
     </div>
 </div>
