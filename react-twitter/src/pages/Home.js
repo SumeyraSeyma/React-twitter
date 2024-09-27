@@ -187,13 +187,14 @@ const Home = () => {
       </div>
     </div>
 </div>
+
 <div className="rounded overflow-hidden shadow-lg p-4 m-4">
               <div>
                 {(filteredData || data?.otherPosts)?.map((post) => (
                   <div key={post.id}>
                   <div className="flex mt-4 ">
-                    <div>
-                    <img src={post.image} alt="profile" className='w-8 h-8 rounded-full border-3 border-black' />
+                    <div className='2xl:w-40 2xl:h-40' id='ha'>
+                    <img src={post.profile} alt="profile" className='w-8 h-8 rounded-full border-3 border-black' />
                       </div>
                       <div>
                     <div className='flex'>
