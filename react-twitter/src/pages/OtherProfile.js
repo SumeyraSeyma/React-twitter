@@ -127,7 +127,7 @@ function OtherProfile() {
               }</div>
               
           </div>
-          <div className="bg-black p-4  mt-3 " >
+          <div className="bg-black p-4  mt-3 mb-11 " >
       <ul className="flex 2xl:h-14 " id='pb'>
         <li className={`${activeTab === 'posts' ? 'border-b-4 border-blue-500 text-white' : 'text-gray-500'} 2xl:px-4 py-2 text-white hover:bg-zinc-800  flex-1 text-center`}>
           <NavLink to="/profile" className={` px-4 py-2 text-white `}>Posts</NavLink>
@@ -147,8 +147,9 @@ function OtherProfile() {
 
       </div>
     </div>
-    <div className="flex">
-        <div className="h-full w-full sm:w-48 md:w-96 hidden 2xl:block bg-black text-white fixed top-0 right-0">
+
+    <div className="hidden 2xl:block">
+        <div className="flex h-full w-full sm:w-48 md:w-96  bg-black text-white fixed top-0 right-0">
           <div className="fixed top-0 right-0 w-96 h-full bg-black text-white p-4">
             <input
                 type="text"

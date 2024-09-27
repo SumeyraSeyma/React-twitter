@@ -144,7 +144,7 @@ function Profile() {
         </ul>
             </div>
             <div className="rounded overflow-hidden shadow-lg p-4 m-4">
-              <div>
+              <div className=' mb-40'>
                 {data && data.posts.map((post) => (
                   <div key={post.id}>
                   <div className="flex mt-4 ">

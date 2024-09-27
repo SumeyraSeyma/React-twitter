@@ -75,7 +75,7 @@ const Home = () => {
       </div>
     <div className='border-slate-400'>
       <div className="flex justify-center">
-        <div className="w-full md:w-6/12 h-16 justify-center backdrop-blur-lg sticky top-0 bg-black p-4">
+        <div className="2xl:w-6/12 h-16 justify-center backdrop-blur-lg sticky top-0 bg-black p-4" id='hc'>
         <div className="flex 2xl:hidden justify-between items-center w-full px-4 py-2 bg-black">
       <NavLink to="/profile" className="flex items-center space-x-2">
         {data && (
