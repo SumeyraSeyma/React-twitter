@@ -17,10 +17,10 @@ function Profile() {
   }
 
   const suggestions = [
-    { name: "Marvel Studios", handle: "@MarvelStudios", verified: true, logo: "https://www.whitescreen.online/image/white-background.png" },
-    { name: "Bill Gates", handle: "@BillGates", verified: true, logo: "https://www.whitescreen.online/image/white-background.png" },
-    { name: "Google", handle: "@Google", verified: true, logo: "https://www.whitescreen.online/image/white-background.png" },
-    { name: "Amazon", handle: "@Amazon", verified: true, logo: "https://www.whitescreen.online/image/white-background.png" },
+    { name: "Marvel Studios", handle: "@MarvelStudios", verified: true, id:1 , logo: "https://www.whitescreen.online/image/white-background.png" },
+    { name: "Bill Gates", handle: "@BillGates", verified: true, id:2, logo: "https://www.whitescreen.online/image/white-background.png" },
+    { name: "Google", handle: "@Google", verified: true, id:3, logo: "https://www.whitescreen.online/image/white-background.png" },
+    { name: "Amazon", handle: "@Amazon", verified: true, id:4, logo: "https://www.whitescreen.online/image/white-background.png" },
   ];
 
 
@@ -253,7 +253,9 @@ function Profile() {
       <h2 className="text-lg font-bold mb-4">You might like</h2>
       <ul>
         {suggestions.slice(0, showMore ? suggestions.length : 3).map(suggestion => (
+                      <NavLink to={`/profile/${suggestion.id}`} >
           <li key={suggestion.id} className="flex items-center justify-between mb-4 last:mb-0">
+
             <div className="flex items-center space-x-3">
               <img src={suggestion.logo} alt="" className="w-8 h-8 rounded-full" />
               <div>
@@ -264,8 +266,11 @@ function Profile() {
             <button className="bg-white text-black font-bold py-1 px-4 rounded-full">
               Follow
             </button>
+           
           </li>
+          </NavLink>
         ))}
+        
       </ul>
       <button onClick={() => setShowMore(!showMore)} className="text-blue-500 hover:underline">
         {showMore ? 'Show less' : 'Show more'}

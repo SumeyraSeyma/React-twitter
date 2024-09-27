@@ -1,0 +1,55 @@
+{   "name": "Marvel Studios", 
+    "username": "@MarvelStudios",
+    "bio": "Marvel",
+    "location": "Seattle, WA",
+    "date": "September, 2021",
+    "followers": 100,
+    "following": 200,
+    "cover": "https://www.whitescreen.online/image/white-background.png",
+    "profile": "https://www.whitescreen.online/image/white-background.png",
+    "posts":[{
+                "id": 1,
+                "tweet": "Hello World!",
+                "date": "Feb 21",
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "image":"https://www.whitescreen.online/image/white-background.png"
+            },
+            {
+                "id": 2,
+                "tweet": "Hello World!",
+                "date": "Jan 21",
+                "likes": 100,
+                "replies": 200,
+                "retweets": 300,
+                "reposts": 300,
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "image":"https://imgix.cosmicjs.com/bab6b030-ff1e-11ed-8fca-9b0db64c9b86-nasa-vhSz50AaFAs-unsplash.jpg?w=1400&auto=compression,format"
+            }
+        ],
+        "trends":[
+            {
+                "location": "Trending in Istanbul",
+                "tag": "#deprem",
+                "posts": "10.4K"
+              },
+              {
+                "location": "Trending in Turkey",
+                "tag": "#intihar",
+                "posts": "7,049"
+              },
+              {
+                "location":"Trending in Turkey",
+                "tag":"Dolar",
+                "posts":"6,049"
+              },
+              {
+                "location":"Trending in Turkey",
+                "tag":"#polis",
+                "posts":"5,049"
+              }
+        ]
+}

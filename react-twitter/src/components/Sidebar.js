@@ -11,7 +11,7 @@ const Sidebar = () => {
         <li className="flex items-center justify-center p-2">
             <NavLink
             to="/"
-            className={`hidden 2xl:block`}
+            className={`hidden 2xl:block xl:block lg:block md:block`}
             >
             <svg className='w-6 h-6 fill-current text-white'>
                 <path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/>
@@ -25,10 +25,10 @@ const Sidebar = () => {
             <svg className='w-6 h-6 fill-current text-white'>
                 <path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"/>
             </svg>
-            <p className="text-white font-semibold hidden 2xl:block text-xl">Home</p>
+            <p className="text-white font-semibold hidden 2xl:block xl:block lg:block md:block text-xl">Home</p>
         </NavLink>
         </li>
-        <li className='hidden 2xl:block'>
+        <li className='hidden 2xl:blockxl:block lg:block md:block'>
           <NavLink
             to="/explore"
             className="flex items-center  justify-start 2xl:ml-40 p-2 space-x-3 hover:bg-gray-700">
@@ -82,7 +82,7 @@ const Sidebar = () => {
           <NavLink
             to="/premium"
             className="flex items-center justify-start ml-40 p-2 space-x-3 hover:bg-gray-700">
-            <svg className='w-6 hidden 2xl:block h-6 fill-current text-white'>
+            <svg className='w-6 hidden 2xl:block xl:block lg:block md:block h-6 fill-current text-white'>
                 <path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/>
             </svg>
             <p className="text-white hidden 2xl:block font-semibold text-xl">Premium</p>
@@ -92,10 +92,10 @@ const Sidebar = () => {
           <NavLink
             to="/bunisess"
             className="flex items-center justify-start ml-40 p-2 space-x-3 hover:bg-gray-700">
-            <svg className='w-6 h-6 hidden 2xl:block fill-current text-white'>
+            <svg className='w-6 h-6 hidden 2xl:block md:block fill-current text-white'>
                 <path d='M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z'/>
             </svg>
-            <p className="text-white hidden 2xl:block font-semibold text-xl">Busines</p>
+            <p className="text-white hidden 2xl:block font-semibold text-xl">Business</p>
           </NavLink>
         </li>
         <li>
@@ -105,7 +105,7 @@ const Sidebar = () => {
             <svg className='w-6 h-6 hidden 2xl:block fill-current text-white'>
                 <path d='M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z'/>
             </svg>
-            <p className="text-white hidden 2xl:block font-semibold text-xl">Profile</p>
+            <p className="text-white hidden 2xl:block md:block font-semibold text-xl">Profile</p>
           </NavLink>
         </li>
         <li className="flex items-center justify-start ml-40 p-2 space-x-3 hover:bg-gray-700">
@@ -113,7 +113,7 @@ const Sidebar = () => {
             <svg className='w-6 h-6 hidden 2xl:block fill-current text-white'>
             <path d='M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z'/>
             </svg>
-            <p className="text-white hidden 2xl:block font-semibold ml-2 text-xl">More</p>
+            <p className="text-white hidden 2xl:block md:block font-semibold ml-2 text-xl">More</p>
           </button>
         </li>
         <li className="flex items-center justify-start ml-40 p-2 space-x-3 hover:bg-gray-700">

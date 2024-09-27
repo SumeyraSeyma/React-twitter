@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Post from './pages/Post';
+import OtherProfile from './pages/OtherProfile';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path='/post' element={<Post />}/>
+        <Route path="/profile/:id" element={<OtherProfile />} />
       </Routes>
     </main>
   </div>
