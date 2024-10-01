@@ -1075,10 +1075,6 @@ code {
   .sm\:w-48 {
     width: 12rem;
   }
-
-  .sm\:flex-row {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1086,16 +1082,8 @@ code {
     display: block;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-96 {
     width: 24rem;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 }
 
@@ -1103,19 +1091,11 @@ code {
   .lg\:block {
     display: block;
   }
-
-  .lg\:hidden {
-    display: none;
-  }
 }
 
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
-  }
-
-  .xl\:hidden {
-    display: none;
   }
 }
 
@@ -1150,10 +1130,6 @@ code {
 
   .\32xl\:w-6\/12 {
     width: 50%;
-  }
-
-  .\32xl\:w-96 {
-    width: 24rem;
   }
 
   .\32xl\:space-x-2 > :not([hidden]) ~ :not([hidden]) {

@@ -34,7 +34,8 @@
   }
 
 
-  @media (width:345px) {
+  @media (max-width:345px) {
+
     #sidebar {
       width: 100%;
       height: auto;
@@ -72,8 +73,8 @@
     }
   
     #sidebar ul li a svg {
-      margin-right: 9.20rem;
-      margin-left: 50px;
+      margin-right: 1.20rem;
+      margin-left: 5px;
     }
   
     #sidebar ul li a p {
@@ -110,6 +111,8 @@
     }
   }
 
+
+
   @media (height:600px) and (width:1024px) {
     #sidebar {
       width: 100%;
@@ -141,7 +144,7 @@
       display: block;
       padding: 0;
       margin: 0;
-      min-width: 130px;
+      min-width: 140px;
       max-width: 200px; 
     }
   
@@ -260,7 +263,228 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media(min-width:346px) and (max-width:399px){
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 49px;
+      max-width: 95px; 
+    }
+  
+    #sidebar ul li a {
+      padding: 10px 5px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 110%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width:400px) and (max-width:429px){
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 52px;
+      max-width: 95px; 
+    }
+  
+    #sidebar ul li a {
+      padding: 10px 5px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 110%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
+  @media (min-width:430px) and (max-width:499px){
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 55px;
+      max-width: 95px; 
+    }
+  
+    #sidebar ul li a {
+      padding: 10px 5px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 110%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width:500px) and(max-width: 640px) {
     #sidebar {
       width: 100%;
       height: auto;
@@ -333,6 +557,80 @@
       width: 100%;
     }
   }
+
+  @media (width:430px) and (height:932px){
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 60px;
+      max-width: 100px;
+    }
+  
+    #sidebar ul li a {
+      padding: 10px 5px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 110%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
   
   @media (min-width:760px) and (max-width: 1023px) {
     #sidebar {
@@ -365,7 +663,7 @@
       display: block;
       padding: 0;
       margin: 0;
-      min-width: 120px;
+      min-width: 110px;
       max-width: 200px; 
     }
   
@@ -412,7 +710,85 @@
     }
   }
 
-  @media (min-width: 1024px) and (min-height:1366) {
+  @media (width:912px) and (height:1368px){
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 130px;
+      max-width: 300px; 
+    }
+  
+    #sidebar ul li a {
+      padding: 20px 10px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #h1{
+      width: 80%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 50%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) and (min-height:1366px) {
     #sidebar {
       width: 100%;
       height: auto;
@@ -567,3 +943,83 @@
       width: 100%;
     }
   }
+
+  @media (min-width:1281px) and (max-width: 1500px) {
+    
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      flex-direction: row;
+      padding: 10px 0;
+      background-color: black;
+      z-index: 1000;
+      opacity: 0.8;
+
+    }
+  
+    #sidebar ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+      gap: 0px;
+      flex-wrap: nowrap;
+    }
+  
+    #sidebar ul li {
+      flex: 1;
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      max-width: 200px; 
+    }
+  
+    #sidebar ul li a {
+      padding: 20px 10px;
+    }
+  
+    #sidebar ul li a p {
+      display: none; 
+    }
+  
+    #sidebar ul li button {
+      width: 100%;
+    }
+
+    #h1{
+      width: 80%;
+    }
+
+    #pa{
+      width: 100%;
+      transition-property: transform;
+      transition-duration: 350ms; 
+      transition-timing-function: cubic-bezier(0, 0, 0, 1); 
+      transform: translate3d(0px, 0px, 0px) translateY(0px);
+    }
+
+    #pc{
+      margin-right: 0.5rem;
+    }
+
+    #ha{
+      width: 50%;
+      height: auto;
+    } 
+
+    #hb{
+      width: 80%;
+    }
+
+    #hc{
+      padding-bottom: 90px;
+      width: 100%;
+    }
+  }
+
