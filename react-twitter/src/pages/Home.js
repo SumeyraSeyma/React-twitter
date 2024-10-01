@@ -133,20 +133,25 @@ const Home = () => {
             </div>
           <div>
     {isFocused && (
-  <div className='flex items-center'>  
-    <svg className='text-blue-500 mr-2' 
+    <div> 
+      <div className='flex ml-12 items-center'> 
+        <svg className='text-blue-500 mr-2' 
           width="20" 
           height="20" 
           viewBox="0 0 24 24" 
           fill="currentColor">
-      <path d='M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z'/>
-    </svg>
-    <button className="text-blue-500">Everyone can reply</button>
-  </div>
-)}
+          <path d='M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z'/>
+        </svg>
+        <button className="text-blue-500">Everyone can reply</button>
+
+      </div>
+      <hr className='w-full mt-2 border-gray-800'/>
+    </div>
+  )}
     </div>
     <div className='flex' >
-    <div className="flex mt-4 2xl:space-x-2 justify-start">
+    <div className="flex mt-4 justify-between w-full">
+      <div className=" ml-10 flex space-x-2">
         <button className="p-2 text-xl">
           <svg className='text-blue-500'
              width="24"
@@ -201,7 +206,9 @@ const Home = () => {
              <path d='M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z'/>
           </svg>
         </button>
+        </div>
         <button className="bg-blue-500 text-white rounded-full px-6 py-2" onClick={handlePost}>Post</button>
+
       </div>
       </div>
     </div>

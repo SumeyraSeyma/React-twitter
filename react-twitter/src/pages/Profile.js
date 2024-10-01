@@ -12,7 +12,7 @@ function Profile() {
   const [activeTab, setActiveTab] = useState('posts');
   const [isSticky, setIsSticky] = useState(false);
   const headerRef = useRef(null);
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const placeholderRef = useRef(null);
 
   let navigate = useNavigate();
     
