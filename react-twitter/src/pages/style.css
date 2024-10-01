@@ -33,6 +33,17 @@
       font-size: 20px;
   }
 
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.9); /* Sayfa boyunca şeffaflık */
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırır */
+  }
+  
+  
 
   @media (max-width:345px) {
 

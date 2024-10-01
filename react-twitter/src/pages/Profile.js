@@ -4,17 +4,38 @@ import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 import { NavLink } from 'react-router-dom';
+import { useRef } from 'react';
 
 function Profile() {
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
   const [activeTab, setActiveTab] = useState('posts');
+  const [isSticky, setIsSticky] = useState(false);
+  const headerRef = useRef(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   let navigate = useNavigate();
     
   const handleGoBack =() => {
     navigate(-1);
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const headerTop = headerRef.current.getBoundingClientRect().top;
+      if (headerTop <= 0) {
+        setIsSticky(true);
+        setHeaderHeight(headerRef.current.offsetHeight);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const suggestions = [
     { name: "Marvel Studios", handle: "@MarvelStudios", verified: true, id:1 , logo: "https://www.whitescreen.online/image/white-background.png" },
@@ -42,9 +63,9 @@ function Profile() {
 
   return (
     <div className="flex justify-center">
-      <div className="2xl:w-6/12 2xl:h-24 justify-center backdrop-blur-lg sticky z-50 top-0 bg-black p-4" id='pa'>
-        <div className="flex ">
-            <button onClick={handleGoBack} className='flex mr-7 items-center justify-start rounded-full border   px-3 py-2  border-black bg-black transition duration-300 ease-in-out'>
+        <div className="2xl:w-6/12 2xl:h-24 justify-center  bg-black p-4" id='pa'>
+       <div className={`flex ${isSticky ? 'sticky-header' : ''}`} ref={headerRef}>
+            <button onClick={handleGoBack} className='flex mr-7 items-center justify-start rounded-full px-3 py-2 transition duration-300 ease-in-out'>
                 <FontAwesomeIcon icon={faArrowLeftLong} className='text-white' />
             </button>
             <div className='mb-3'>
