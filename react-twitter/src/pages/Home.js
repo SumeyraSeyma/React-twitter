@@ -98,6 +98,7 @@ const Home = () => {
       </div>
     </div>
           <div className="flex justify-center mt-0 border border-gray-800">
+            <div className="flex justify-center w-full">
             <NavLink
               to="/for-you"
               className={`${activeTab === 'forYou' ? 'border-b-2 border-blue-500' : ''} px-4 py-2 text-white`}
@@ -105,6 +106,8 @@ const Home = () => {
             >
               For you
             </NavLink>
+            </div>
+            <div className="flex justify-center w-full">
             <NavLink
               to="/following"
               className={({ isActive }) =>
@@ -114,6 +117,7 @@ const Home = () => {
             >
               Following
             </NavLink>
+            </div>
           </div>
           <div className='hidden 2xl:block'>
           <div className="flex flex-col  w-full p-4 border border-gray-800">
