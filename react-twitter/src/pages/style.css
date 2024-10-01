@@ -37,12 +37,18 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    background: #000;
-    background-color: rgba(0, 0, 0, 0.9); /* Sayfa boyunca şeffaflık */
-    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırır */
-  }
-  
+    z-index: 1000;  
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0%);
+}
+
+.header {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1; 
+}
+
   
 
   @media (max-width:345px) {

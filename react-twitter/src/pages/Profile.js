@@ -22,19 +22,13 @@ function Profile() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const headerTop = headerRef.current.getBoundingClientRect().top;
-      if (headerTop <= 0) {
-        setIsSticky(true);
-        setHeaderHeight(headerRef.current.offsetHeight);
-      } else {
-        setIsSticky(false);
-      }
+      // headerRef.current.offsetTop başlangıç konumunu elde etmek için kullanılır
+      const shouldStick = window.pageYOffset > headerRef.current.offsetTop;
+      setIsSticky(shouldStick);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const suggestions = [
@@ -63,8 +57,8 @@ function Profile() {
 
   return (
     <div className="flex justify-center">
-        <div className="2xl:w-6/12 2xl:h-24 justify-center  bg-black p-4" id='pa'>
-       <div className={`flex ${isSticky ? 'sticky-header' : ''}`} ref={headerRef}>
+        <div className="2xl:w-6/12 2xl:h-24 justify-center bg-black p-4" id='pa'>
+        <div ref={headerRef} className={`flex ${isSticky ? 'sticky-header' : ''}`}>
             <button onClick={handleGoBack} className='flex mr-7 items-center justify-start rounded-full px-3 py-2 transition duration-300 ease-in-out'>
                 <FontAwesomeIcon icon={faArrowLeftLong} className='text-white' />
             </button>
