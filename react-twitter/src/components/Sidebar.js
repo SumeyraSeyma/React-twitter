@@ -116,7 +116,7 @@ const Sidebar = () => {
             <p className="text-white hidden 2xl:block md:block font-semibold ml-2 text-xl">More</p>
           </button>
         </li>
-        <li className="flex items-center justify-start ml-40 p-2 space-x-3 hover:bg-gray-700">
+        <li className="flex items-center justify-start ml-40 p-2 space-x-3">
           <button className="hidden 2xl:block items-center justify-center rounded-full w-64 h-12" id='post'>
             <p className="text-white font-semibold text-xl">Post</p>
           </button>
